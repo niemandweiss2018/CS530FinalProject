@@ -8,6 +8,6 @@
 
 // TODO: This will be the entry point for the login page, if no information forward to login page.
 
-header('location:Login.htm');
+header('location:Login.php');
 
 ?>
