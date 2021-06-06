@@ -1,0 +1,59 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Christian Wagner\
+Dr. Donald Wright\
+\
+Website Page Description\
+\
+Entry Point Handler:\
+This page is the main entry point from any external website into ours. This page serves to ensure that every user of the site has an active and tracked session. Users must enter using this page, otherwise none of the other pages will work because they will not have an active session being tracked by the webserver.\
+\
+Login Handler:\
+Handler page for all things login and logout. Checks login information against database and signals entry page that it is ok to create a session if login credentials are good.\
+\
+Login Page:\
+Display elements for logging in to the website. Shows things such as input for username and password, as well as a forgot my password link.\
+\
+User Information Page:\
+The handler for this page is the entry handler. This page shows all of the current status of projects that relate to the user. From this page, a user can look at group projects, look at and modify their own projects, as well as view and edit their personal information in the database.\
+\
+Constructions Handler:\
+Handler for the personal constructions page. Coordinates all types of commands for modifying the constructions page.\
+\
+Constructions Main:\
+Main display elements for the personal constructions handler. This displays the information about projects that the user owns.\
+\
+User Information Handler:\
+Handler page for the user\'92s information modification and viewing page. Will handle database updates as well as coordinate page elements.\
+\
+User Information Main:\
+Display elements for the user\'92s information handler. Shows things like username, email, address, company, etc.\
+\
+Group Projects Handler:\
+Handler page for the group projects display page. This handles the same action as does the constructions handler but does so for only group projects because the view and needs of the Group Projects Main page are different.\
+\
+Group Projects Main:\
+Display elements for the group projects. Gives similar information to Constructions Main, but also allows for collaboration and submissions of changes to other members of the group.\
+\
+Building Overview Handler:\
+Handler page for the building overview page. This allows a user to see a high level or low level view of their construction that was selected off of the main constructions page.\
+\
+Building Overview Main:\
+Display elements for the building overview page. Shows information about the building and allows specific modifications to be made.\
+\
+Construction Edit Handler:\
+Handler for all changes to personal construction projects. Does database updates and forwards to Construction Edit Main.\
+\
+Construction Edit Main:\
+Main editor used to make, confirm, and rollback changes to a project. User\'92s can also view changes made previously in here.\
+\
+Group Project Change Handler:\
+Handler for any changes made to the group projects for any given user. \
+\
+Group Project Change Main:\
+Display elements for doing a change to a building covered under the group project role. These changes are handled similarly to that of regular personal construction edits, however the changes must go up to the master of the project for approval instead of being committed to the database immediately. There is also a place for group members to make suggestions and collaborate without making changes or making a request for changes.}

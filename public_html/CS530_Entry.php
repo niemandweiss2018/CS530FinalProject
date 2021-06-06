@@ -1,16 +1,18 @@
 <?php
+    include 'Functions.inc';
+    include 'Declarations.inc';
 
-/*
-    Programmer: Christian Wagner
-    Date Created: 04/22/2021
-    Date Modified: 04/22/2021
-*/
+    SetDateTimeZone();
+    $SessionResult = session_start(); // start new session
 
-// This is the main entry point into the website
+    if( !$SessionResult ) {
+        die( 'Session error!' ); // session error, cannot continue
+    }
 
-// go to main login handler if no POST vars are found, else forward to main handler
-if(!isset($_SESSION)) {header('location:Login_hdlr.php');}
-else if(isset($_POST)) {/* Deal with vars */ header('location:Main_hdlr.php');}
-else {header('location:Main_hdlr.php');}
+    $_SESSION['ErrorMsg'] = ERR_NONE;                                           // no error message
+    $_SESSION['IsError'] = FALSE;                                               // error flag is disabled
+    $_SESSION['UserID'] = 0;                                                    // no user now
+    $_SESSION['SessionID'] = 0;                                                 // no session now
 
+    header( 'Location: Login_hdlr.php' );
 ?>
